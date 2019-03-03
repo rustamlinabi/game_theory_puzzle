@@ -40,14 +40,12 @@ def winner3(a,b,c,n):
     return win
 wins=[]
 sections1=[10,20,50,100,200]
-minmax=[0,1]
 minb=[0,1]
 minc=[0,1]
 winners=[]
 awinscopy=[]
 #1
 for sections in sections1:
-    print("minmax at the begin", minb)
     wins = []
     winners = []
     awinscopy = []
@@ -57,7 +55,6 @@ for sections in sections1:
     else:
         beginb=int(minb[0]*sections)
         endb=min(sections,int(minb[1]*sections)+5)
-    print(sections, beginb, endb, minb)
     for awin in range(0,1):
         for bwin in range(beginb,endb):
             for cwin in range(0,sections):
