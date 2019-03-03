@@ -48,7 +48,6 @@ winners=[]
 awinscopy=[]
 #1
 for sections in sections1:
-    print("minmax at the begin", minb)
     wins = []
     winners = []
     awinscopy = []
@@ -67,7 +66,6 @@ for sections in sections1:
             end=min(sections,int(sections*minmax[1]))
         beginb=int(minb[0]*sections)
         endb=min(sections,int((minb[1]*sections)+5))
-    print(sections, begin, end, beginb, endb, minb)
     for awin in range(begin,end):
         for bwin in range(beginb,endb):
             for cwin in range(0,sections):
